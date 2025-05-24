@@ -7,7 +7,6 @@ import numpy as np
 
 df = pd.read_csv('StudentsPerformance.csv')
 
-# Add dummy attendance and study_hours columns for demonstration
 np.random.seed(42)
 df['attendance'] = np.random.randint(60, 101, size=len(df))
 df['study_hours'] = np.random.randint(1, 11, size=len(df))
